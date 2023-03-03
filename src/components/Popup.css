@@ -1,0 +1,49 @@
+.popupwrap
+{
+    width:700px;
+    height:700px;
+    background:rgba(0, 0, 0, 0.162);
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:450px;
+    border-radius: 20px;
+    position: fixed;
+    top:100px;
+    
+}
+.popup
+{
+    width:400px;
+    height: 600Px;
+    border-radius: 20px;;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+.popcontent img{
+  width:200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.popcontent h2{
+    margin-top:20px;
+    font-family: poppins;
+}
+.popcontent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:300px;
+}
+.popbutton
+{
+    display: flex;
+    gap:20px;
+}

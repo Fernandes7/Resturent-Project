@@ -1,0 +1,21 @@
+.wrap{
+    position:absolute;
+    position: fixed;
+    top:20px;
+    right:20px;
+}
+.addtocart{
+    display:flex;
+    flex-direction:column;
+    width:65px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(217, 217, 242);
+    border-radius: 10px;
+}
+.addtocart img{
+    width:50px;
+    height:50px;
+    border-radius: 5px;
+}
