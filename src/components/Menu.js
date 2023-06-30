@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Special from './Special';
 import  Allmenu  from './AllmenuContex';
 import { allmenucontext } from './AllmenuContex';
+import {Appprovider} from '../Context/Appprovider';
 function Menu() {
   const [category,setCategory]=useState();
   const [singledish,setSingle]=useState([]);
@@ -29,11 +30,13 @@ function Menu() {
      
   return (
     <div>
+     <Appprovider>
      <Allmenu >
      <Hero />
      <Special/>
      <Allcategory cat={category} all={meal} single={singledish} setSingle={setSingle}/>
      </Allmenu>
+     </Appprovider>
     </div>
   )
 }

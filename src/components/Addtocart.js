@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Addtocart.css"
+import { Statecontext } from '../Context/Appprovider'
 function Addtocart({add}) {
-    console.log(add)
+    const newcart=useContext(Statecontext)
+    console.log(newcart)
     let items=add.map((item)=>{
     return(
       <div className="addtocart">
@@ -10,9 +12,18 @@ function Addtocart({add}) {
         </div>  
     )
     })
+    let item=newcart.cartitems.map((item)=>{
+      return(
+        <div className="addtocart">
+          <img src={item.img} alt="halt"></img>
+          <h6>{item.title}</h6>
+          </div>  
+      )
+      })
   return (
     <div className='wrap'>
-       {items} 
+       {items}
+       {item}
     </div>
   )
 }
